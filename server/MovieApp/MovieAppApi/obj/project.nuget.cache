@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "h2gperWXD6F0OHb8lLeKxhM7YiveKegJXuh/dKV29uclnTJFoHObBeMGSZM0yqCvJcrZn/zXI3B0EOeLDx/aAQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\JAIMZ\\Desktop\\WORK\\PROGRESS\\JVConsults_assessment-\\server\\MovieApp\\MovieAppApi\\MovieAppApi.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\JAIMZ\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.19.5\\microsoft.visualstudio.azure.containers.tools.targets.1.19.5.nupkg.sha512"
+  ],
+  "logs": []
+}
