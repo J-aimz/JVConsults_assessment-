@@ -23,3 +23,4 @@ C:\Users\JAIMZ\Desktop\WORK\PROGRESS\JVConsults_assessment-\server\MovieApp\Movi
 C:\Users\JAIMZ\Desktop\WORK\PROGRESS\JVConsults_assessment-\server\MovieApp\MovieAppApi\obj\Debug\net8.0\MovieAppApi.pdb
 C:\Users\JAIMZ\Desktop\WORK\PROGRESS\JVConsults_assessment-\server\MovieApp\MovieAppApi\obj\Debug\net8.0\MovieAppApi.genruntimeconfig.cache
 C:\Users\JAIMZ\Desktop\WORK\PROGRESS\JVConsults_assessment-\server\MovieApp\MovieAppApi\obj\Debug\net8.0\ref\MovieAppApi.dll
+C:\Users\JAIMZ\Desktop\WORK\PROGRESS\JVConsults_assessment-\server\MovieApp\MovieAppApi\obj\Debug\net8.0\MovieAppApi.sourcelink.json

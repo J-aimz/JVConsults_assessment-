@@ -22,11 +22,15 @@ namespace MovieAppApi.Controllers
 
 
         [HttpGet("/movie/search")]
-        public async Task<IActionResult> SerachForMovieByTitle([FromQuery] string title)
+        [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(ApiResponseDto))]
+        [ProducesResponseType(StatusCodes.Status400BadRequest, Type = typeof(ApiResponseDto))]
+        [ProducesResponseType(StatusCodes.Status404NotFound, Type = typeof(ApiResponseDto))]
+        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
+        public async Task<IActionResult> SerachForMovieByTitle([FromQuery] string title, [FromQuery] int page = 1)
         {
             if (title is null || !(title.GetType() == typeof(string))) return BadRequest(ApiResponseDto.Failed("BadRequest"));
 
-            string url = StaticDetails.ExternalUrl + "&s=" + title.ToString();
+            string url = StaticDetails.ExternalUrl + "&s=" + title + "&page="+ page.ToString();
 
             _logger.LogInformation("Initiated title: {title} search at time: {time} ", title, DateTime.UtcNow);
             var result = await _apiCall.Send(url);
@@ -49,6 +53,10 @@ namespace MovieAppApi.Controllers
 
 
         [HttpGet("/movie/{id}")]
+        [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(ApiResponseDto))]
+        [ProducesResponseType(StatusCodes.Status400BadRequest, Type = typeof(ApiResponseDto))]
+        [ProducesResponseType(StatusCodes.Status404NotFound, Type = typeof(ApiResponseDto))]
+        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
         public async Task<IActionResult> GetMovieById(string id)
         {
             if (id is null || !(id.GetType() == typeof(string))) return BadRequest(ApiResponseDto.Failed("BadRequest"));
